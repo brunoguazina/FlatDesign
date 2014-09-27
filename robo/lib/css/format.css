@@ -1,0 +1,262 @@
+html,
+body {
+  background-color: #FFF;
+  padding: 0px;
+  margin: 0px;
+}
+#trocarCor {
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.next {
+  position: absolute;
+  right: 0px;
+  margin: 200px 0 0 0;
+  height: 150px;
+  background-color: transparent;
+}
+.next .arrow {
+  margin: 45px 0 0 10px;
+  border-color: transparent transparent transparent #ccc;
+  border-width: 30px;
+  border-style: solid;
+}
+.next:hover {
+  background-color: #ccc;
+  transition: all 0.5s ease;
+}
+.next:hover .arrow {
+  transition: all 1s ease;
+  border-color: transparent transparent transparent #555;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.base {
+  position: relative;
+  width: 500px;
+  height: 750px;
+  margin: 85px auto 0 auto;
+}
+#cabeca {
+  z-index: 10;
+  position: relative;
+  width: 155px;
+  height: 115px;
+  margin: 0 auto;
+  background: #508fbb;
+}
+#cabeca .olho {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 50%;
+  background: #fff;
+}
+#cabeca .olho span {
+  margin: 19px 0 0 19px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+#cabeca .olho.esquerdo {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+}
+#cabeca .olho.direito {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+#cabeca .boca {
+  width: 83px;
+  height: 43px;
+  border-radius: 48%;
+  margin: 0 auto 0 auto;
+  border-bottom: solid 4px #ffba00;
+  position: absolute;
+  bottom: 14px;
+  left: 33px;
+}
+.baseAntena {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #ffba00;
+  z-index: 5;
+  position: absolute;
+  top: -20px;
+  left: 212px;
+}
+.baseAntena .haste {
+  width: 5px;
+  height: 45px;
+  background: #000;
+  margin: -45px auto 0 auto;
+  position: relative;
+}
+.baseAntena .haste div {
+  position: absolute;
+  background: #fd721f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: -10px;
+  left: -7px;
+}
+.pescoco {
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
+  background: #ffba00;
+}
+.corpo {
+  padding: 55px;
+  width: 175px;
+  height: 160px;
+  margin: 0 auto;
+  z-index: 10;
+  background: #508fbb;
+}
+.corpo ul {
+  margin: 0 auto;
+  padding: 0;
+  display: table;
+  width: 160px;
+}
+.corpo ul li {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+}
+.bracoDireito {
+  background: #ffba00;
+  width: 120px;
+  height: 35px;
+  top: 160px;
+  left: 28px;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+.bracoDireito .cotovelo {
+  width: 40px;
+  height: 40px;
+  background: #fd721f;
+  border-radius: 50%;
+  left: -15px;
+  z-index: 10;
+  margin: -2px 0px 0 -11px;
+}
+.bracoDireito .antebraco {
+  background: #ffba00;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  top: 41px;
+  left: -98px;
+  z-index: -10;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+.bracoEsquerdo {
+  background: #ffba00;
+  width: 120px;
+  height: 35px;
+  top: 160px;
+  right: 29px;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+}
+.bracoEsquerdo .cotovelo {
+  width: 40px;
+  height: 40px;
+  background: #fd721f;
+  border-radius: 50%;
+  left: -15px;
+  z-index: 10;
+  margin: -2px 0px 0 -11px;
+}
+.bracoEsquerdo .cotovelo .antebraco {
+  background: #ffba00;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  top: -45px;
+  left: -103px;
+  z-index: -10;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+.mao {
+  border-top: solid 17px #508fbb;
+  border-right: solid 25px #508fbb;
+  border-bottom: solid 17px #508fbb;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  left: -42px;
+  top: -15px;
+}
+.pernaDireita {
+  width: 45px;
+  height: 180px;
+  background: #ffba00;
+  position: absolute;
+  left: 170px;
+}
+.pernaEsquerda {
+  width: 45px;
+  height: 180px;
+  background: #ffba00;
+  position: absolute;
+  right: 170px;
+}
+.pe {
+  width: 85px;
+  height: 50px;
+  position: absolute;
+  background: #fd721f;
+  left: -18px;
+  bottom: 0px;
+  -webkit-border-top-left-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-radius-topleft: 50%;
+  -moz-border-radius-topright: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
